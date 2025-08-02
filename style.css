@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.wrapper {
+  transform-style: preserve-3d;
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transform: rotateY(5deg) rotateX(5deg) scale(1.02);
+  transition: transform 0.5s ease;
+  width: 320px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: rotateY(0deg) rotateX(0deg) scale(1.05);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.selectors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selectors select {
+  width: 45%;
+}
+
+button {
+  background-color: #2b5876;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4e4376;
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2b5876;
+}
